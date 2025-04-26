@@ -42,7 +42,7 @@ const BettingForm: React.FC = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/bets/place-bet`,
+        `${process.env.VITE_API_URL}/api/bets/place-bet`,
         betData,
         {
           headers: {
